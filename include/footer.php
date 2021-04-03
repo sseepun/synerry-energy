@@ -7,7 +7,65 @@
 <!-- Footer -->
 <?php if(!isset($footerNoPattern)){?>
     <div class="footer-pattern">
-        <img src="public/assets/app/images/bg/footer.png" alt="Footer Pattern" />
+        <div class="img-bg back" style="background-image:url('public/assets/app/images/misc/footer-back.png');"></div>
+        <div class="item-container back">
+            <div class="wrapper">
+                <img class="img fan fan-03" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+                <img class="img fan fan-04" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+                <img class="img fan fan-05" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+                <img class="img fan fan-06" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+            </div>
+        </div>
+        <div class="item-container back left">
+            <div class="wrapper">
+                <img class="img fan fan-03" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+                <img class="img fan fan-04" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+                <img class="img fan fan-05" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+                <img class="img fan fan-06" src="public/assets/app/images/misc/footer-fan-gray.png" alt="Image Icon" />
+            </div>
+        </div>
+
+        <div class="img-bg front" style="background-image:url('public/assets/app/images/misc/footer-front.png');"></div>
+        <div class="item-container front">
+            <div class="wrapper">
+                <img class="img circle" src="public/assets/app/images/misc/footer-circle.png" alt="Image Icon" />
+                <div class="battery">
+                    <div class="wrapper">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                </div>
+                <img class="img fan fan-01" src="public/assets/app/images/misc/footer-fan.png" alt="Image Icon" />
+                <img class="img fan fan-02" src="public/assets/app/images/misc/footer-fan.png" alt="Image Icon" />
+            </div>
+        </div>
+        <div class="item-container front left">
+            <div class="wrapper">
+                <img class="img circle" src="public/assets/app/images/misc/footer-circle.png" alt="Image Icon" />
+                <div class="battery">
+                    <div class="wrapper">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                </div>
+                <img class="img fan fan-01" src="public/assets/app/images/misc/footer-fan.png" alt="Image Icon" />
+                <img class="img fan fan-02" src="public/assets/app/images/misc/footer-fan.png" alt="Image Icon" />
+            </div>
+        </div>
     </div>
 <?php }?>
 <nav class="footer">
