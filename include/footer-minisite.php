@@ -92,30 +92,40 @@
                     </div>
                 </div>
                 <div class="block right-block">
-                    <div class="block-header">
-                        <p class="fw-500">
-                            <em class="fas fa-sitemap color-01 mr-1"></em>
-                            แผนผังเว็บไซต์
-                        </p>
+                    <div class="block">
+                        <div class="block-header">
+                            <p class="fw-500">
+                                <em class="fas fa-sitemap color-01 mr-1"></em>
+                                แผนผังเว็บไซต์
+                            </p>
+                        </div>                    
+                        <div class="text-wrapper">
+                            <a class="btn btn-action btn-color-01 btn-round btn-xs mt-3" href="#">
+                            
+                            ลงทะเบียนรับข่าวสาร</a>
+                        </div>
+                        <div class="block-footer mt-5">
+                            <p class="mr-1">ติดตามผ่าน</p>
+                            <a class="btn btn-social" href="#">
+                                <em class="fab fa-facebook-f"></em>
+                            </a>
+                            <a class="btn btn-social" href="#">
+                                <em class="fab fa-line"></em>
+                            </a>
+                            <a class="btn btn-social" href="#">
+                                <em class="fab fa-youtube"></em>
+                            </a>
+                            <a class="btn btn-social" href="#">
+                                <em class="fab fa-instagram"></em>
+                            </a>
+                            <a class="btn btn-social" href="#">
+                                <em class="fab fa-twitter"></em>
+                            </a>
+                        </div>                                            
                     </div>
-                    <div class="block-footer">
-                        <p class="mr-1">ติดตามผ่าน</p>
-                        <a class="btn btn-social" href="#">
-                            <em class="fab fa-facebook-f"></em>
-                        </a>
-                        <a class="btn btn-social" href="#">
-                            <em class="fab fa-line"></em>
-                        </a>
-                        <a class="btn btn-social" href="#">
-                            <em class="fab fa-youtube"></em>
-                        </a>
-                        <a class="btn btn-social" href="#">
-                            <em class="fab fa-instagram"></em>
-                        </a>
-                        <a class="btn btn-social" href="#">
-                            <em class="fab fa-twitter"></em>
-                        </a>
-                    </div>
+
+
+
                 </div>
             </div>
         </div>
