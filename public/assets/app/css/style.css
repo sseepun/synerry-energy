@@ -759,7 +759,7 @@ textarea[data-copy]{pointer-events:none!important;}
     line-height:2.25rem; margin:.3125rem 0 0 0;
 }
 .ss-card-01 .text-container{width:calc(100% - 3rem);}
-.ss-card-01 .text-container .title{margin:0 0 .25rem 0;}
+.ss-card-01 .text-container .title{margin:0;}
 .ss-card-01.lg{align-items:center; padding:0;}
 .ss-card-01.lg .icon-container{width:3rem; margin:0 1rem 0 .5rem;}
 .ss-card-01.lg .icon-container .icon{

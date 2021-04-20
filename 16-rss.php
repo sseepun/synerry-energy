@@ -38,7 +38,12 @@
                                     <a class="title p fw-600" href="#">
                                         ประกาศกระทรวงพลังงาน NO GIFT POLICY “งดรับ งดให้ ของขวัญ ของกำนัลทุกชนิด”
                                     </a>
-                                    <h6 class="p sm fw-600 color-01">
+                                    <?php if($i%2==0){?>
+                                        <p class="sm fw-200 color-gray">
+                                            ประกาศกระทรวงพลังงาน NO GIFT POLICY “งดรับ งดให้ ของขวัญ ของกำนัลทุกชนิด”
+                                        </p>
+                                    <?php }?>
+                                    <h6 class="p sm fw-600 color-01 mt-1">
                                         20.01.2564
                                     </h6>
                                 </div>
