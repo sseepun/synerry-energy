@@ -44,46 +44,95 @@
                                         แต่ขึ้นกับการตัดสินใจของผู้ลงทุนด้วย การลงทุนเชิงพาณิชย์ต้องใช้เงินลงทุนสูงประกอบกับผลผลิตวัตถุดิบยังไม่มากพอคงจะต้องรอเวลาระยะหนึ่งแต่ปัจจุบันก็มีโรงงานขนาดใหญ่เกิดขึ้นแล้วหลายแห่ง 
                                         ขณะเดียวกันเราก็มุ่งเน้นให้ชุมชนช่วยเหลือตัวเองได้ในระดับหนึ่ง
                                     </p>
-                                    <div class="scroll-x-wrapper mt-3">
-                                        <table class="table">
-                                            <tbody>
-                                                <?php for($j=0; $j<2; $j++){?>
-                                                    <tr>
-                                                        <td class="va-baseline pr-0">
-                                                            <h6 class="color-02">
-                                                                <em class="far fa-file-pdf"></em>
-                                                            </h6>
-                                                        </td>
-                                                        <td style="min-width:380px;">
-                                                            <p class="md fw-600">
-                                                                นโยบายควบคุมราคาก๊าซปิโตรเลียมเหลว (LPG)
-                                                            </p>
-                                                            <p class="sm fw-200 color-gray mt-1">
-                                                                ขนาดไฟล์
-                                                                <span class="fw-500 color-black">1.31 MB</span>
-                                                                <span class="sep"></span>
-                                                                จำนวนดาวน์โหลด
-                                                                <span class="fw-500 color-black">16 ครั้ง</span>
-                                                                <span class="sep"></span>
-                                                                <a class="color-01 h-color-02" href="#">
-                                                                    <em class="fas fa-exclamation-circle text-xs mr-05"></em>
-                                                                    แจ้งไฟล์เสีย
-                                                                </a>
-                                                            </p>
-                                                        </td>
-                                                        <td style="min-width:130px;">
-                                                            <div class="d-flex ai-center jc-end">
-                                                                <a class="btn btn-action btn-color-03 btn-round btn-sm" href="#">
-                                                                    ดาวน์โหลด 
-                                                                    <em class="far fa-arrow-alt-circle-down ml-1"></em>
-                                                                </a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                <?php }?>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <?php if(true){?>
+                                        <div class="scroll-x-wrapper mt-3">
+                                            <table class="table table-lg border-bottom bcolor-sgray">
+                                                <tbody>
+                                                    <?php
+                                                        foreach([
+                                                            'pdf', 'word', 'video', 'powerpoint',
+                                                            'image', 'excel', 'code'
+                                                        ] as $j=>$k){
+                                                    ?>
+                                                        <tr>
+                                                            <td class="va-baseline pr-0">
+                                                                <div class="ticon bg-0<?= $j%5+2 ?>">
+                                                                    <em class="far fa-file-<?= $k ?>"></em>
+                                                                </div>
+                                                            </td>
+                                                            <td style="min-width:380px;">
+                                                                <p class="title-wrap md fw-600">
+                                                                    ประกาศสำนักงานปลัดกระทรวงพลังงานเรื่อง ประกาศผู้ชนะการเสนอราคา 
+                                                                    ซื้อวัสดุสำนักงาน จำนวน 3 รายการ
+                                                                </p>
+                                                                <p class="sm fw-200 color-gray ws-nowrap mt-1">
+                                                                    ขนาดไฟล์
+                                                                    <span class="fw-500 color-01">1.31 MB</span>
+                                                                    <span class="sep"></span>
+                                                                    จำนวนดาวน์โหลด
+                                                                    <span class="fw-500 color-01">16 ครั้ง</span>
+                                                                    <span class="sep"></span>
+                                                                    <a class="color-gray h-color-01" href="#">
+                                                                        <em class="fas fa-exclamation-circle text-xs color-01 mr-05"></em>
+                                                                        แจ้งไฟล์เสีย
+                                                                    </a>
+                                                                </p>
+                                                            </td>
+                                                            <td style="min-width:130px;">
+                                                                <div class="d-flex ai-center jc-end">
+                                                                    <a class="btn btn-action btn-color-01 btn-round btn-sm" href="#">
+                                                                        ดาวน์โหลด
+                                                                        <em class="far fa-arrow-alt-circle-down ml-1"></em>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    <?php }?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    <?php }else{?>
+                                        <div class="scroll-x-wrapper mt-3">
+                                            <table class="table">
+                                                <tbody>
+                                                    <?php for($j=0; $j<2; $j++){?>
+                                                        <tr>
+                                                            <td class="va-baseline pr-0">
+                                                                <h6 class="color-02">
+                                                                    <em class="far fa-file-pdf"></em>
+                                                                </h6>
+                                                            </td>
+                                                            <td style="min-width:380px;">
+                                                                <p class="md fw-600">
+                                                                    นโยบายควบคุมราคาก๊าซปิโตรเลียมเหลว (LPG)
+                                                                </p>
+                                                                <p class="sm fw-200 color-gray mt-1">
+                                                                    ขนาดไฟล์
+                                                                    <span class="fw-500 color-black">1.31 MB</span>
+                                                                    <span class="sep"></span>
+                                                                    จำนวนดาวน์โหลด
+                                                                    <span class="fw-500 color-black">16 ครั้ง</span>
+                                                                    <span class="sep"></span>
+                                                                    <a class="color-01 h-color-02" href="#">
+                                                                        <em class="fas fa-exclamation-circle text-xs mr-05"></em>
+                                                                        แจ้งไฟล์เสีย
+                                                                    </a>
+                                                                </p>
+                                                            </td>
+                                                            <td style="min-width:130px;">
+                                                                <div class="d-flex ai-center jc-end">
+                                                                    <a class="btn btn-action btn-color-03 btn-round btn-sm" href="#">
+                                                                        ดาวน์โหลด 
+                                                                        <em class="far fa-arrow-alt-circle-down ml-1"></em>
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    <?php }?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    <?php }?>
                                 </div>
                             </div>
                         </div>

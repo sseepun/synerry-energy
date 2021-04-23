@@ -20,7 +20,13 @@
         <div class="container">
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
-                    $listHeader = ['search', 'category'];
+                    $listHeader = [
+                        'search', 'category',
+                        'order_options' => [
+                            'เรียงลำดับข้อมูล', 'รายการล่าสุด', 'รายการเก่าที่สุด',
+                            'เป็นที่นิยม', 'เริ่มต้นใหม่'
+                        ]
+                    ];
                     include('component/list-header.php');
                 ?>
             </div>
@@ -47,7 +53,10 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="0">
                 <?php
-                    $listFooter = ['total', 'pagination', 'pp'];
+                    $listFooter = [
+                        'total', 'pagination', 'pp',
+                        'pp_options' => [20, 40, 60, 80, 100]
+                    ];
                     include('component/list-footer.php');
                 ?>
             </div>

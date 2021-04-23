@@ -33,11 +33,15 @@
                     แสดงผลต่อหน้า
                     <div class="select-wrapper">
                         <select class="pp color-01 fw-600 round">
-                            <option value="10">10</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="75">75</option>
-                            <option value="100">100</option>
+                            <?php if(empty($listFooter['pp_options'])){?>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="75">75</option>
+                                <option value="100">100</option>
+                            <?php }else{ foreach($listFooter['pp_options'] as $p){?>
+                                <option value="<?= $p ?>"><?= $p ?></option>
+                            <?php }}?>
                         </select>
                     </div>
                 </div>

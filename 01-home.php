@@ -148,7 +148,7 @@
                                                     </a>
                                                     <div class="ss-stat">
                                                         <div class="stat">
-                                                            8 มกราคม 2020
+                                                            1 เมษายน 2564
                                                         </div>
                                                         <div class="stat">
                                                             <em class="far fa-eye mr-1"></em> 178
@@ -159,9 +159,9 @@
                                                         (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
                                                         HR Forum 2020, Big Data
                                                     </p>
-                                                    <div class="arrow">
+                                                    <a class="arrow" href="#">
                                                         <em class="far fa-arrow-alt-circle-right"></em>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <a class="ss-img square" href="#">
                                                     <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= ($i+$j)%5+1 ?>.jpg');"></div>
@@ -424,7 +424,7 @@
                                                     </a>
                                                     <div class="ss-stat">
                                                         <div class="stat">
-                                                            8 มกราคม 2020
+                                                            1 เมษายน 2564
                                                         </div>
                                                         <div class="stat">
                                                             <em class="far fa-eye mr-1"></em> 178
@@ -435,9 +435,9 @@
                                                         (DUGA) กำหนดจัดงานอบรมสัมมนา eGovernment Forum 2020, Digital 
                                                         HR Forum 2020, Big Data
                                                     </p>
-                                                    <div class="arrow">
+                                                    <a class="arrow" href="#">
                                                         <em class="far fa-arrow-alt-circle-right"></em>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>

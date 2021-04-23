@@ -20,7 +20,12 @@
         <div class="container">
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
-                    $listHeader = ['search', 'category', 'order'];
+                    $listHeader = [
+                        'search', 'category', 'order',
+                        'order_options' => [
+                            'เก่าที่สุด - ใหม่ที่สุด', 'ใหม่ที่สุด - เก่าที่สุด', 'เปิดดูมากสุด'
+                        ]
+                    ];
                     include('component/list-header.php');
                 ?>
             </div>
@@ -41,23 +46,26 @@
                                 ?>
                                     <tr>
                                         <td class="va-baseline pr-0">
-                                            <div class="ticon bg-0<?= $i%5+2 ?>">
+                                            <a class="ticon bg-0<?= $i%5+2 ?>" href="#">
                                                 <em class="far fa-file-<?= $d ?>"></em>
-                                            </div>
+                                            </a>
                                         </td>
                                         <td style="min-width:380px;">
-                                            <p class="md fw-600">
+                                            <a class="title-wrap p md fw-600 h-color-01" href="#">
                                                 ประกาศสำนักงานปลัดกระทรวงพลังงานเรื่อง ประกาศผู้ชนะการเสนอราคา 
                                                 ซื้อวัสดุสำนักงาน จำนวน 3 รายการ
-                                            </p>
-                                            <p class="sm fw-200 color-gray mt-1">
+                                            </a>
+                                            <p class="sm fw-200 color-gray ws-nowrap mt-1">
+                                                วันที่
+                                                <span class="fw-500 color-01">30/03/2564</span>
+                                                <span class="sep"></span>
                                                 ขนาดไฟล์
                                                 <span class="fw-500 color-01">1.31 MB</span>
                                                 <span class="sep"></span>
                                                 จำนวนดาวน์โหลด
                                                 <span class="fw-500 color-01">16 ครั้ง</span>
                                                 <span class="sep"></span>
-                                                <a class="color-gray h-color-01" href="#">
+                                                <a class="color-gray h-color-01 btn-popup-toggle" data-popup="file-report" href="#">
                                                     <em class="fas fa-exclamation-circle text-xs color-01 mr-05"></em>
                                                     แจ้งไฟล์เสีย
                                                 </a>
@@ -81,13 +89,17 @@
 
             <div data-aos="fade-up" data-aos-delay="0">
                 <?php
-                    $listFooter = ['total', 'pagination', 'pp'];
+                    $listFooter = [
+                        'total', 'pagination', 'pp',
+                        'pp_options' => [12, 24, 36, 48, 60, 72, 84, 96]
+                    ];
                     include('component/list-footer.php');
                 ?>
             </div>
         </div>
     </section>
     
+    <?php include_once('component/popup-file-report.php'); ?>
     <?php include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>

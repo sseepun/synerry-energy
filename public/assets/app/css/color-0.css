@@ -507,8 +507,11 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 .ss-img .mag-bg{background:#d3d5d8;}
 .ss-img .mag-bg::before{background:#fe4d01;}
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
+.ss-img .hover-container.init-transparent{background:transparent;}
+.ss-img .hover-container.init-transparent:hover{background:rgba(255,77,1,.5);}
 .ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffffff;}
 .ss-img .video-info > em{color:#fe4d01;}
+.ss-img .time-tag{background:rgba(0,0,0,.65); color:#ffffff;}
 
 
 /* Special List 01 */

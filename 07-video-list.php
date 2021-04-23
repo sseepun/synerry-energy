@@ -20,7 +20,12 @@
         <div class="container">
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
-                    $listHeader = ['search', 'category', 'order', 'icon-grid', 'icon-rss'];
+                    $listHeader = [
+                        'search', 'category', 'order', 'icon-grid', 'icon-rss',
+                        'order_options' => [
+                            'เก่าที่สุด - ใหม่ที่สุด', 'ใหม่ที่สุด - เก่าที่สุด', 'เปิดดูมากสุด'
+                        ]
+                    ];
                     include('component/list-header.php');
                 ?>
             </div>
@@ -30,11 +35,12 @@
                         <div class="img-container">
                             <a class="ss-img adaptive-list" href="https://www.youtube.com/watch?v=u3VFzuUiTGw" data-fancybox>
                                 <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
-                                <div class="hover-container">
+                                <div class="hover-container init-transparent op-100">
                                     <div class="icon">
                                         <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
                                     </div>
                                 </div>
+                                <div class="time-tag">3:15</div>
                             </a>
                         </div>
                         <div class="text-container">
@@ -43,10 +49,7 @@
                             </a>
                             <div class="ss-stat">
                                 <div class="stat">
-                                    8 มกราคม 2020
-                                </div>
-                                <div class="stat">
-                                    <em class="far fa-clock mr-1"></em> 3:15
+                                    1 เมษายน 2564
                                 </div>
                                 <div class="stat">
                                     <em class="far fa-eye mr-1"></em> 178
@@ -61,7 +64,10 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="0">
                 <?php
-                    $listFooter = ['total', 'pagination', 'pp'];
+                    $listFooter = [
+                        'total', 'pagination', 'pp',
+                        'pp_options' => [12, 24, 36, 48, 60, 72, 84, 96]
+                    ];
                     include('component/list-footer.php');
                 ?>
             </div>

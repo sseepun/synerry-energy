@@ -19,7 +19,12 @@
     <section class="section-padding" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <?php
-                $listHeader = ['search', 'category', 'order', 'crud'];
+                $listHeader = [
+                    'search', 'category', 'order', 'crud',
+                    'order_options' => [
+                        'เก่าที่สุด - ใหม่ที่สุด', 'ใหม่ที่สุด - เก่าที่สุด', 'เปิดดูมากสุด'
+                    ]
+                ];
                 include('component/list-header.php');
             ?>
             <div class="scroll-x-wrapper mt-4">
@@ -81,7 +86,10 @@
                 </table>
             </div>
             <?php
-                $listFooter = ['total', 'pagination', 'pp'];
+                $listFooter = [
+                    'total', 'pagination', 'pp',
+                    'pp_options' => [20, 40, 60, 80, 100]
+                ];
                 include('component/list-footer.php');
             ?>
         </div>

@@ -20,7 +20,12 @@
         <div class="container">
             <div data-aos="fade-up" data-aos-delay="300">
                 <?php
-                    $listHeader = ['search', 'category', 'order', 'icon-grid', 'icon-rss'];
+                    $listHeader = [
+                        'search', 'category', 'order', 'icon-grid', 'icon-rss',
+                        'order_options' => [
+                            'เก่าที่สุด - ใหม่ที่สุด', 'ใหม่ที่สุด - เก่าที่สุด', 'เปิดดูมากสุด'
+                        ]
+                    ];
                     include('component/list-header.php');
                 ?>
             </div>
@@ -35,7 +40,7 @@
                                 </a>
                                 <div class="ss-stat mb-0 jc-space-between">
                                     <div class="stat mr-0">
-                                        8 มกราคม 2020
+                                        1 เมษายน 2564
                                     </div>
                                     <div class="stat mr-0">
                                         <em class="fas fa-download mr-1"></em> 159K
@@ -59,7 +64,10 @@
             </div>
             <div data-aos="fade-up" data-aos-delay="0">
                 <?php
-                    $listFooter = ['total', 'pagination', 'pp'];
+                    $listFooter = [
+                        'total', 'pagination', 'pp',
+                        'pp_options' => [12, 24, 36, 48, 60, 72, 84, 96]
+                    ];
                     include('component/list-footer.php');
                 ?>
             </div>

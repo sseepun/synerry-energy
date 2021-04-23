@@ -30,13 +30,13 @@
                     <a class="btn btn-social fw" href="#" tabindex="0">
                         <em class="fab fa-facebook-f"></em>
                     </a>
-                    <div class="p fw-600">10</div>
+                    <!-- <div class="p fw-600">10</div> -->
                 </div>
                 <div class="text-center mr-2">
                     <a class="btn btn-social tw" href="#" tabindex="0">
                         <em class="fab fa-twitter"></em>
                     </a>
-                    <div class="p fw-600">8</div>
+                    <!-- <div class="p fw-600">8</div> -->
                 </div>
                 <div class="text-center">
                     <a class="btn btn-social ln" href="#" tabindex="0">

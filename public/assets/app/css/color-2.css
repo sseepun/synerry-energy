@@ -388,10 +388,13 @@ input[type=number], input[type=phone], input[type=submit], input[type=file], sel
 
 /* Special Image */
 .ss-img .hover-container{background:rgba(255,77,1,.5);}
+.ss-img .hover-container.init-transparent{background:transparent;}
+.ss-img .hover-container.init-transparent:hover{background:rgba(255,77,1,.5);}
 .ss-img .mag-bg{background:#000000;}
 .ss-img .mag-bg::before{background:#ffff00;}
 .ss-img .video-info .duration{background:rgba(0,0,0,.5); color:#ffff00;}
 .ss-img .video-info > em{color:#000000;}
+.ss-img .time-tag{background:rgba(0,0,0,.65); color:#ffff00;}
 
 
 /* Special List 01 */

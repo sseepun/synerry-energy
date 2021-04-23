@@ -17,7 +17,13 @@
             <?php if(in_array('order', $listHeader)){?>
                 <div class="select-wrapper">
                     <select class="round">
-                        <option value="">เรียงลำดับข้อมูล</option>
+                        <option value="" disabled selected>เรียงลำดับข้อมูล</option>
+                        <?php 
+                            if(!empty($listHeader['order_options'])){
+                                foreach($listHeader['order_options'] as $p){
+                        ?>
+                            <option value="<?= $p ?>"><?= $p ?></option>
+                        <?php }}?>
                     </select>
                 </div>
             <?php }?>
