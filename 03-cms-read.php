@@ -15,7 +15,7 @@
         $breadcrumbBg = 'public/assets/app/images/bg/04.jpg';
         include('component/breadcrumb.php');
     ?>
-    
+    <?php include_once('include/warning-file-modal.php'); ?>
     <section class="section-padding" data-aos="fade-up" data-aos-delay="300">
         <div class="container">
             <h6 class="h4 fw-500 lh-sm color-black">

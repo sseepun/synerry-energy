@@ -16,7 +16,7 @@
         $breadcrumbBg = 'public/assets/app/images/bg/secretary-05.jpg';
         include('component/breadcrumb-secretary.php');
     ?>
-    
+    <?php include('component/warning-file-modal.php'); ?>
     <section class="section-padding">
         <div class="container">
             <div data-aos="fade-up" data-aos-delay="300">
@@ -72,7 +72,7 @@
                                                                     จำนวนดาวน์โหลด
                                                                     <span class="fw-500 color-01">16 ครั้ง</span>
                                                                     <span class="sep"></span>
-                                                                    <a class="color-gray h-color-01" href="#">
+                                                                    <a class="color-gray h-color-01" data-toggle="modal" data-target="#warning-file" href="#">
                                                                         <em class="fas fa-exclamation-circle text-xs color-01 mr-05"></em>
                                                                         แจ้งไฟล์เสีย
                                                                     </a>
@@ -113,7 +113,7 @@
                                                                     จำนวนดาวน์โหลด
                                                                     <span class="fw-500 color-black">16 ครั้ง</span>
                                                                     <span class="sep"></span>
-                                                                    <a class="color-01 h-color-02" href="#">
+                                                                    <a class="color-01 h-color-02" data-toggle="modal" data-target="#warning-file" href="#">
                                                                         <em class="fas fa-exclamation-circle text-xs mr-05"></em>
                                                                         แจ้งไฟล์เสีย
                                                                     </a>
