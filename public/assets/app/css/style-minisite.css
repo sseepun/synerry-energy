@@ -524,3 +524,13 @@ nav.footer-minisite .visitor-count > *{background:#29292a; color:#ff4917;}
     }
     .float-choice-wrapper > .wrapper{justify-content:center;}
 }
+
+/* 404 page */
+.bg-404{
+    background-image: url('/public/assets/app/images/bg/404.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 420px;
+    flex-flow: column;
+    justify-content: flex-end;
+}
