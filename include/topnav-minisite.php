@@ -34,6 +34,13 @@
                                 <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/us-flag.png');"></div>
                             </a>
                         </div>
+                        <div class="block">
+                             <a class="btn flag-btn  active" href="#">
+                                <span class="text">เข้าสู่ระบบ</span>
+                                <i class="fas fa-user" style="color:#FE4D01"></i>
+                             </a> 
+                        </div>
+                                             
                     </div>
                 </div>
                 <div class="bottom-container">
@@ -175,6 +182,11 @@
                     </a>
                 </div>
             </div>
+                <div class="block">
+                     <a class="btn flag-btn  active" href="#">
+                        <span class="text" style="font-size:0.8rem;">เข้าสู่ระบบ</span>
+                     </a> 
+                </div>
         </div>
         <div class="scroll-wrapper" data-simplebar>
             <div class="menu-container"></div>
