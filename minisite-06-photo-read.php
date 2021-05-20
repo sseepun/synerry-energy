@@ -17,7 +17,7 @@
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
     ?>
-
+     <?php include('component/warning-file-modal.php'); ?>
     <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
             <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">

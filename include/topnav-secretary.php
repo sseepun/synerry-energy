@@ -149,6 +149,14 @@
                     </a>
                 </div>
             </div>
+            <div class="option">
+                <div>
+                <p>เข้าสู่ระบบ</p>
+                </div>
+                <div class="dropdown" style="width:5rem;">
+                        <p>ออกจากระบบ</p>
+                </div>
+            </div>
         </div>
         <div class="scroll-wrapper" data-simplebar>
             <div class="menu-container"></div>
@@ -221,6 +229,19 @@
                     <em class="fas fa-sitemap"></em>
                 </a>
             </div>
+            <div class="block">
+                <div class="flag-wrapper shadow" style="width:7rem;">
+                    <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/user.png');"></div>
+                    <div class="text">เข้าสู่ระบบ</div>
+                    <em class="fas fa-chevron-down"></em>
+                </div>
+                <div class="dropdown">
+                    <div class="flag-wrapper" style="width:7rem;">
+                        <div class="flag-icon" style="background-image:url('public/assets/app/images/misc/user.png');"></div>
+                        <div class="text">ออกจากระบบ</div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </div>

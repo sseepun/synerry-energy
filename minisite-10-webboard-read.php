@@ -17,7 +17,7 @@
         $breadcrumbBg = 'public/assets/app/images/bg/minisite-01.jpg';
         include('component/breadcrumb-minisite.php');
     ?>
-
+    <?php include('component/warning-file-modal.php'); ?>
     <section class="section-minisite section-padding pt-0" style="background-image:url('public/assets/app/images/bg/pattern-02.png');">
         <div class="container">
             <div class="ss-box full-grid position-relative" data-aos="fade-up" data-aos-delay="600">
@@ -123,7 +123,7 @@
                                                                         <em class="fas fa-arrow-circle-down mr-1"></em> 
                                                                         ดาวน์โหลด ( <span class="color-black">109</span> )
                                                                     </a>
-                                                                    <a class="color-gray h-color-02 fw-500" href="#">
+                                                                    <a class="color-gray h-color-02 fw-500" data-toggle="modal" data-target="#warning-file" href="#">
                                                                         <em class="fas fa-exclamation-triangle color-02 mr-1"></em>
                                                                         แจ้งไฟล์เสีย
                                                                     </a>

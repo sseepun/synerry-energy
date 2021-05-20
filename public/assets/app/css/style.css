@@ -1758,3 +1758,13 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
     .xs-no-br > br{display:none;}
     .xs-hide{display:none;}
 }
+
+/* 404 page */
+.bg-404{
+    background-image: url('/public/assets/app/images/bg/404.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 420px;
+    flex-flow: column;
+    justify-content: flex-end;
+}
