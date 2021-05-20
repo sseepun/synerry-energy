@@ -27,7 +27,7 @@
             </div>
             <div class="post-video width-full">
                 <div class="wrapper">
-                    <video class="fit" controls="">
+                    <video class="fit" controls="controls" controlsList="download">
                         <source src="public/assets/app/video/01.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
