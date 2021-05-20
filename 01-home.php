@@ -57,7 +57,7 @@
                             <img class="img-content" src="public/assets/app/images/misc/rep-02.png" alt="Image Content" />
                             <div class="position-relative text-center">
                                 <p class="fw-400 margin-03 lh-sm">
-                                    <span class="text-xl fw-300">อัพเดทข้อมูลทันใจ</span> 
+                                    <span class="text-xl fw-300">อัปเดตข้อมูลทันใจ</span> 
                                     <br> สมัครรับข่าวสารจากเรา
                                 </p>
                             </div>
@@ -78,7 +78,7 @@
                     <div class="sep"></div>
                     <div class="intro-card lg bcolor-white bg-white" data-aos="fade-up" data-aos-delay="300">
                         <div class="wrapper">
-                            <h6 class="p fw-600">พลังงานอัพเดท</h6>
+                            <h6 class="p fw-600">พลังงานอัปเดต</h6>
                             <p class="xs fw-500 lh-xs op-40">02.04.2563</p>
                             <p class="xs fw-400 mt-2">
                                 กระทรวงพลังงาน 
@@ -116,7 +116,7 @@
                     <div class="blocks" data-aos="fade-up" data-aos-delay="0">
                         <div class="block">
                             <h6 class="h3 fw-600 color-black">
-                                อัพเดทข่าวพลังงาน
+                                อัปเดตข่าวพลังงาน
                             </h6>
                         </div>
                         <div class="block">
@@ -353,7 +353,7 @@
                                         </tfoot>
                                     </table>
                                     <div class="btns text-right mt-3">
-                                        <a class="btn btn-action btn-color-black btn-round btn-xs" href="#">
+                                        <a class="btn btn-action btn-color-01 btn-round btn-xs" href="#">
                                             ข้อมูลเพิ่มเติม <em class="far fa-arrow-alt-circle-right ml-1"></em>
                                         </a>
                                     </div>
@@ -368,6 +368,8 @@
     </div>
 
     <!-- Page 3 -->
+    <?php include_once('component/areas.php'); ?>
+    <?php include_once('component/provinces.php'); ?>
     <div class="ss-page" data-page="3">
         <section class="about-03 section-padding" style="background-image:url('public/assets/app/images/bg/home-03.jpg');">
             <div class="container position-relative">
@@ -391,12 +393,20 @@
                                         <span class="p sm fw-400 color-white mr-1">แสดงข่าวจาก</span>
                                         <div class="select-wrapper">
                                             <select class="sm round">
-                                                <option value="">ภาคกลาง</option>
+                                                <?php foreach($areas as $m=>$a){?>
+                                                    <option value="<?= $m ?>">
+                                                        <?= $a ?>
+                                                    </option>
+                                                <?php }?>
                                             </select>
                                         </div>
                                         <div class="select-wrapper">
                                             <select class="sm round">
-                                                <option value="">ทั้งหมด</option>
+                                                <?php foreach($provinces as $m=>$p){?>
+                                                    <option value="<?= $m ?>">
+                                                        <?= $p ?>
+                                                    </option>
+                                                <?php }?>
                                             </select>
                                         </div>
                                     </div>
@@ -413,7 +423,7 @@
                                 <div class="grids">
                                     <?php for($i=0; $i<4; $i++){?>
                                         <div class="grid xl-25 lg-1-3 sm-50">
-                                            <div class="ss-card ss-card-02">
+                                            <div class="ss-card ss-card-02 bg-slide">
                                                 <div class="text-container">
                                                     <div class="card-tag">
                                                         สำนักงานพลังงานจังหวัดแม่ฮ่องสอน
@@ -498,7 +508,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="text-container">
-                                                    <a class="title p sm fw-400" href="#">
+                                                    <a class="title p sm fw-300" href="#">
                                                         <?= $k ?>
                                                         ประกาศสำนักงานปลัดกระทรวงพลังงาน เรื่องประกาศผู้ชนะการเสนอราคา 
                                                         จ้างซ่อมเครื่องถ่ายเอกสารยี่ห้อ RICOH รุ่น AFICIO MP ๓๓๙๑ 
@@ -560,16 +570,16 @@
                                     <div class="px-2 py-2 bg-white border bcolor-white">
                                         <a class="ss-img" href="https://www.youtube.com/watch?v=u3VFzuUiTGw" data-fancybox>
                                             <div class="img-bg" style="background-image:url('public/assets/app/images/content/0<?= $i%5+1 ?>.jpg');"></div>
-                                            <div class="hover-container">
+                                            <div class="hover-container bg-transparent op-100">
                                                 <div class="icon">
                                                     <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
                                                 </div>
                                             </div>
                                             <div class="short-desc bg-white">
-                                                <p class="sm fw-600 color-black lh-xs">
+                                                <p class="sm fw-500 color-black lh-xs">
                                                     วีดีทัศน์ "พลังสายธารแห่งพระบารมี"
                                                 </p>
-                                                <p class="xs fw-600 color-01 lh-xs">
+                                                <p class="xs fw-500 color-01 lh-xs">
                                                     16 เมษายน 2020
                                                 </p>
                                             </div>
@@ -591,11 +601,11 @@
                                                     </a>
                                                 </div>
                                                 <div class="text-container">
-                                                    <a class="title p xs fw-600" href="#">
+                                                    <a class="title p xs fw-500" href="#">
                                                         <?= $k ?>
                                                         รายการเดินหน้าประเทศไทย ดีเซล B20 รหัสความสุขเกษตรกรปาล์มน้ำมัน
                                                     </a>
-                                                    <p class="date fw-600">
+                                                    <p class="date fw-500">
                                                         8 เมษายน 2020
                                                     </p>
                                                 </div>
@@ -618,7 +628,7 @@
                 <h6 class="h3 fw-600 color-black" data-aos="fade-up" data-aos-delay="0">
                     หน่วยงานที่เกี่ยวข้อง
                 </h6>
-                <div class="gallery-grids mt-2" data-aos="fade-up" data-aos-delay="150">
+                <div class="gallery-grids mt-2" data-aos="fade-up" data-aos-delay="150" style="--ggs:.5rem;">
                     <div class="grid lg-25 sm-50 mt-0">
                         <a class="ss-img square clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-01.jpg');"></div>
@@ -626,17 +636,32 @@
                                 กรมพัฒนาพลังงานทดแทน <br>
                                 และอนุรักษ์พลังงาน
                             </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
+                            </div>
                         </a>
                         <a class="ss-img horizontal clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-02.jpg');"></div>
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 สำนักงานพลังงานจังหวัด
                             </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
+                            </div>
                         </a>
                         <a class="ss-img horizontal clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-03.jpg');"></div>
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 ศูนย์ปฏิบัติการต่อต้านการทุจริต
+                            </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -647,17 +672,32 @@
                                 สำนักงานคณะกรรมการกำกับ <br>
                                 กิจการพลังงาน
                             </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
+                            </div>
                         </a>
                         <a class="ss-img square clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-05.jpg');"></div>
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 สำนักงานนโยบายและแผนพลังงาน
                             </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
+                            </div>
                         </a>
                         <a class="ss-img horizontal clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-06.jpg');"></div>
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 สำนักงานกองทุนน้ำมันเชื้อเพลิง
+                            </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -667,11 +707,21 @@
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 กรมเชื้อเพลิงธรรมชาติ
                             </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
+                            </div>
                         </a>
                         <a class="ss-img square clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-08.jpg');"></div>
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 กรมธุรกิจพลังงาน
+                            </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -681,11 +731,21 @@
                             <div class="detail-wrapper text-center p md fw-400 color-black">
                                 ศูนย์ข้อมูลข่าวสารของหน่วยงานภายใต้กำกับกระทรวงพลังงาน
                             </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
+                            </div>
                         </a>
                         <a class="ss-img horizontal clip-path-01 mt-2" href="#">
                             <div class="img-bg" style="background-image:url('public/assets/app/images/misc/grid-10.jpg');"></div>
                             <div class="detail-wrapper text-center p md fw-400 color-white">
                                 คู่มือสำหรับประชาชน
+                            </div>
+                            <div class="hover-container">
+                                <div class="icon">
+                                    <img src="public/assets/app/images/icon/play.png" alt="Hover Icon" />
+                                </div>
                             </div>
                         </a>
                         <a class="contact-card-02 bg-01 clip-path-01 mt-2" href="#">

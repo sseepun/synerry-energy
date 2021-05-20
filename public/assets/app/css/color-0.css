@@ -363,6 +363,9 @@ input[type=file].fgray, select.fgray, textarea.fgray{background:#f8f9fa!importan
 .ss-card-02:hover .text-container .ss-stat .stat,
 .ss-card-02:hover .text-container .arrow{color:#ffffff;}
 .ss-card-02 .text-container .card-tag{background:#fe4d01; color:#ffffff;}
+.ss-card-02.bg-slide{background:#ffffff;}
+.ss-card-02.bg-slide::before{background:#fe4d01;}
+.ss-card-02.bg-slide .text-container{background:transparent!important;}
 
 /* Special Card 03 */
 .ss-card-03 .text-container{background:#f2f2f2;}
@@ -806,7 +809,7 @@ table.table.table-06 th{background:#e9e9e9;}
 
 
 /* Tab Container - Tabs 01 */
-.tab-container .tabs.tabs-01 .tab{color:#b6b6b6;}
+.tab-container .tabs.tabs-01 .tab{color:#666666;}
 .tab-container .tabs.tabs-01 .tab:hover, .tab-container .tabs.tabs-01 .tab.active{color:#fe4d01;}
 .tab-container .tabs.tabs-01 .tab::before{background:#e1e1e1;}
 .tab-container .tabs.tabs-01 .tab::after{background:#fe4d01;}
